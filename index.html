@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        .navig {
+
+             width: 100%;
+             height: 100px;
+             background-color: antiquewhite;
+             border-color: chartreuse;
+             font-size: 23px;
+        }
+
+
+        #slideshow {
+           
+            position: relative;
+
+       }
+
+
+
+       #slideshow img {
+
+        width: 40%;
+        height: 430px;
+        border: 3px solid silver;
+        position: absolute;
+        transition:  1s ease-in-out;
+        
+        }
+
+
+
+        #slideshow img {
+
+           opacity: 0;
+
+            }
+
+
+
+
+         #slideshow img.active {
+
+               opacity: 1;
+
+      }
+
+
+           .pic-slide {
+
+            width: 30%;
+            height: 200px;
+            border: 3px solid rgb(241, 238, 12);
+            right: 10%;
+            position: absolute;
+            top: 40%;
+
+
+           }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <nav class="navig">WELCOME TO NEWTON'S ACADEMY  </nav>
+
+    
+    
+    <div id="slideshow">
+
+       <img src="./hzpix/Battery-top view.jpg"/>
+       <img src="./hzpix/Charge controller-1.png"/>
+       <img src="./hzpix/HZinverter.jpg"/>
+       <img src="./hzpix/HZpump.jpg"/>
+       <img src="./hzpix/Refridgerator.jpg"/>
+       <img src="./hzpix\Solar panels-1.png"/>
+
+     </div>
+
+
+     <img id="pic-slide" src=""/>
+
+
+
+
+    <h3>WEB PAGE DESIGNED BY:
+        
+            <h2> NEWTON'S YOUNG PROGRAMMERS</h2></h2>
+    </h3>
+
+
+       
+
+
+     <script src="">
+
+         function showImage(){
+
+            
+            const slideshow = document.getElementById("slideshow");
+
+     setInterval( () => {
+            img.forEach((img ,index) => {
+
+                const slide = document.getElementById("pic-slide");
+                slide.innerHTML = img[i].src.replace("slideshow img.active")
+                                                          
+
+
+                                                                   
+            });
+         }, 2000)
+
+         }
+
+         showImage();
+     </script>
+
+
+</body>
+</html>
+
+
+
+
